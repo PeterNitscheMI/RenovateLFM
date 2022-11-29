@@ -4,9 +4,13 @@
     {
       "matchManagers": ["npm"],
       "matchPackagePatterns": ["*"],
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchUpdateTypes": ["minor", "patch", "lockFileMaintenance"],
       "groupName": "all non-major npm dependencies"
     }
   ],
-  "rangeStrategy": "bump"
+  "rangeStrategy": "bump",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["at any time"]
+  }
 }
